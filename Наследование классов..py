@@ -3,7 +3,7 @@ class Car:
 
     def horse_power(self):
 
-        print('количество лошидиных сил для автомобиля')
+        return 'лошадь сила', self.price
 
 
 class Nissan(Car):
@@ -11,12 +11,18 @@ class Nissan(Car):
 
     def horse_power(self):
 
-        print('количество лошидиных сил для автомобиля')
-        
+        return 'лошадь сила', self.price
+
 
 class Kia(Car):
     price = 200000
 
     def horse_power(self):
 
-        print('количество лошидиных сил для автомобиля')
+        return 'лошадь сила', self.price
+
+
+cube = Nissan()
+rio = Kia()
+cube.horse_power()
+rio.horse_power()
